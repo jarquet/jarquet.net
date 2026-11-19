@@ -231,7 +231,7 @@ ul { margin: 0; padding: 0; }
 .card h3 { font-size: 1.2rem; font-weight: 700; }
 .card p { color: var(--text); }
 .card .tags { margin-top: auto; padding-top: 6px; }
-.card-links { margin: 16px 0 0; font-weight: 600; }
+.card-links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 16px 0 0; font-weight: 600; }
 .card-links a { text-decoration: none; }
 .card-links a:hover { text-decoration: underline; }
 .pill {
