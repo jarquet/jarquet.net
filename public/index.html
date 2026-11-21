@@ -218,20 +218,20 @@
 
           <article class="card">
             <div class="card-head">
-              <h3>AI market-analysis agent</h3>
+              <h3>PaperMachine</h3>
               <span class="pill">Private repo</span>
             </div>
-            <p>Uses Claude Code scheduled tasks to analyze S&amp;P 500 tickers three times each trading day for fundamental- and pattern-based entry signals, paper-trading through the Alpaca API. It grades its own past calls and keeps a lessons-learned history in the repository.</p>
-            <p class="tags"><span>Claude Code</span><span>Agentic workflows</span><span>Alpaca API</span></p>
+            <p>An AI trading agent that runs on scheduled Claude Code routines. Each trading day it researches S&amp;P 500 candidates against five defined setups, writes a thesis for every proposed trade, and paper-trades through the Alpaca API. Python guardrails, not prompts, enforce the risk limits, protective stops, and kill switch. A weekly report reviews each closed trade against its thesis and updates the lessons file the agent reads before every run.</p>
+            <p class="tags"><span>Python</span><span>Claude Code</span><span>Agentic workflows</span><span>Alpaca API</span></p>
           </article>
 
           <article class="card">
             <div class="card-head">
-              <h3>ML trading-signal engine</h3>
+              <h3>BullForge</h3>
               <span class="pill">Private repo</span>
             </div>
-            <p>Applies machine-learning models to price structure to emit trade signals, and paper-trades them through the Alpaca API.</p>
-            <p class="tags"><span>Machine learning</span><span>Alpaca API</span></p>
+            <p>A machine-learning trading platform built as seven Dockerized Python services that talk over Redis pub/sub. It streams Alpaca market data into TimescaleDB, computes features, trains per-symbol LightGBM, gradient-boosting, LSTM, and MLP models, and ensembles their predictions into signals that it paper-trades on stocks and crypto. It also includes a walk-forward backtester, broker reconciliation, live-vs-backtest drift monitoring with tiered halts, and an operator dashboard.</p>
+            <p class="tags"><span>Python</span><span>asyncio</span><span>TimescaleDB</span><span>Redis</span><span>Docker</span><span>PyTorch</span><span>LightGBM</span></p>
           </article>
 
           <article class="card">
